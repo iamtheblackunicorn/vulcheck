@@ -11,8 +11,8 @@
     "security",
     "passwords"
   ],
-  "type": "module",
-  "author": "Alexander Abraham",
+  "type":"module",
+  "author": "Alexander Abraham <youreccentricity@outlook.com> (http://angeldustduke.art)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iamtheblackunicorn/vulcheck/issues"
