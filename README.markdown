@@ -10,7 +10,7 @@ Roughly a year ago, I implemented my own algorithm to check the strength of a pa
 
 ## The Algorithm
 
-The algorithm measures the distance between neighbouring characters. If the two characters being compared are of a different type then the score is increased, if not, it is diminished. If two characters are compared and the distance is large, then the score is increased. At the end everything is totalled up.
+The algorithm measures the distance between neighbouring characters. If the two characters being compared are of a different type, then the score is increased. If not, it is diminished. If two characters are compared and the distance is large, then the score is increased. At the end everything is totalled up.
 
 ### Use ***Vulcheck*** in a Node.js project
 
