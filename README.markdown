@@ -58,6 +58,11 @@ This should return `true`. :wink:
 - Initial release.
 - Upload to GitHub.
 
+### Version 1.1.0
+
+- Upload to NPM.
+- Fixing confusion between CJS and ESM.
+
 ## NOTE :scroll:
 
 - *Vulcheck :lock: :ribbon:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
