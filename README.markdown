@@ -36,6 +36,21 @@ $ npm install --save-dev vulcheck
 - `isSecure(password)`: Returns a boolean telling you if your password is secure or not. If the score is larger than eight, then it will return `true`.
 - `testAll()`: Tests all of the above.
 
+### Example
+
+Here's a small example:
+
+```Javascript
+const vulcheck = require('vulcheck');
+
+function main(){
+  var pwd = '1969HoglinSteak';
+  vulcheck.isSecure(pwd);
+}
+```
+
+This should return `true`. :wink:
+
 ## CHANGELOG :black_nib:
 
 ### Version 1.0.0
