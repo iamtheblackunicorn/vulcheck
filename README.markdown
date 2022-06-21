@@ -8,7 +8,33 @@ Roughly a year ago, I implemented my own algorithm to check the strength of a pa
 
 ## USAGE :hammer:
 
-:warning:***Coming soon!***:warning:
+## The Algorithm
+
+The algorithm measures the distance between neighbouring characters. If the two characters being compared are of a different type then the score is increased, if not, it is diminished. If two characters are compared and the distance is large, then the score is increased. At the end everything is totalled up.
+
+### Use ***Vulcheck*** in a Node.js project
+
+To use ***Vulcheck*** in a Node.js project, run this command in your project's root directory:
+
+```bash
+$ npm install --save-dev vulcheck
+```
+
+### APIs
+
+***Vulcheck*** offers the following functions:
+
+- `getCharPositon(character)`: Returns the position of an alphabet in the alphabet.
+- `getCharSpace(characterOne, characterTwo)`: Returns the distance between two alphabetic characters.
+- `getNumberSpace(numberOne, numberTwo)`: Returns the distance between two numbers.
+- `stringType(character)`: Returns the type of string.
+    - `int`: Character is an integer.
+    - `normChar`: Character is an alphabetic character.
+    - `specialChar`: Character is a special symbol.
+- `isInt(expr)`: Returns a boolean telling you whether `expr` is an integer or not.
+- `passwordStrength(password)`: Returns a score that says how secure your password is.
+- `isSecure(password)`: Returns a boolean telling you if your password is secure or not. If the score is larger than eight, then it will return `true`.
+- `testAll()`: Tests all of the above.
 
 ## CHANGELOG :black_nib:
 
