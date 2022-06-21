@@ -1,5 +1,7 @@
 # VULCHECK :lock: :ribbon:
 
+![GitHub CI](https://github.com/iamtheblackunicorn/vulcheck/actions/workflows/node.yml/badge.svg)
+
 ***A package that implements my own algorithm to check the security of a password. :lock: :ribbon:***
 
 ## ABOUT :books:
@@ -19,6 +21,8 @@ To use ***Vulcheck*** in a Node.js project, run this command in your project's r
 ```bash
 $ npm install --save-dev vulcheck
 ```
+
+Be sure to also add the `"type":"module"` to your project's manifest, `package.json`.
 
 ### APIs
 
@@ -40,16 +44,46 @@ $ npm install --save-dev vulcheck
 
 Here's a small example:
 
-```Javascript
-const vulcheck = require('vulcheck');
+- 1.) Initialize a new Node.js project with the following command in a directory of your choosing:
+
+```bash
+$ npm init -y 
+```
+
+- 2.) Install ***Vulcheck***:
+
+```bash
+$ npm install --save-dev vulcheck
+```
+
+- 3.) Be sure to add this line to your project's `package.json`:
+
+```JSON
+"type":"module",
+```
+
+- 4.) Create your `index.js` and put the following code inside it:
+
+```js
+// index.js
+import vulcheck from 'vulcheck';
 
 function main(){
   var pwd = '1969HoglinSteak';
-  vulcheck.isSecure(pwd);
+  console.log(vulcheck.isSecure(pwd).toString());
 }
+
+main();
 ```
 
-This should return `true`. :wink:
+- 5.) Run the project:
+
+```bash
+$ node .
+```
+
+- 6.) This should print `false` to the console. :wink:
+- 7.) Optional: If you're not sure how to use this project, check out the example project.
 
 ## CHANGELOG :black_nib:
 
@@ -62,6 +96,11 @@ This should return `true`. :wink:
 
 - Upload to NPM.
 - Fixing confusion between CJS and ESM.
+
+### Version 1.2.0
+
+- Added an example.
+- More extensive documentation.
 
 ## NOTE :scroll:
 
