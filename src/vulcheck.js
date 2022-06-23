@@ -132,6 +132,23 @@ export function isSecure(password) {
   return result;
 }
 
+/// This method generates a password of
+/// the length specified and returns it.
+export function generatePassword(length) {
+  let alphabetString = 'abcdefghijklmnopqrstuvwxyz1234567890@_;.:';
+  let alphabet = alphabetString.split('');
+  let result = [];
+  for (var i = 0; i < length; i++) {
+    let randomChar = alphabet[
+      Math.floor(
+        Math.random()*alphabet.length
+      )
+    ];
+    result.add(randomChar);
+  }
+  return result.join('');
+}
+
 // A function to test everything.
 export function testAll(){
     console.log(getCharPositon('a'));
@@ -144,4 +161,5 @@ export function testAll(){
     console.log(isSecure('1969HoglinPoo'));
     console.log(isInt('a'));
     console.log(isInt('1'));
+    console.log(generatePassword(256));
 }
