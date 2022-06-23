@@ -144,7 +144,7 @@ export function generatePassword(length) {
         Math.random()*alphabet.length
       )
     ];
-    result.add(randomChar);
+    result.push(randomChar);
   }
   return result.join('');
 }
