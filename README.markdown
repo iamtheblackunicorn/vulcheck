@@ -108,6 +108,11 @@ $ node .
 - Fixed some typos.
 - Added a function to generate a password of user-supplied length.
 
+### Version 1.4.0
+
+- Fixed some ciritical issues.
+- Updated documentation.
+
 ## NOTE :scroll:
 
 - *Vulcheck :lock: :ribbon:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*
