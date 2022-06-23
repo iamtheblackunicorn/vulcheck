@@ -106,7 +106,7 @@ $ node .
 ### Version 1.3.0
 
 - Fixed some typos.
-- Added a function to generate a password of a user-supplied length.
+- Added a function to generate a password of user-supplied length.
 
 ## NOTE :scroll:
 
