@@ -105,7 +105,7 @@ export function passwordStrength(password) {
     } else if (currentItemType == 'specialChar' &&
         lastItemType == 'specialChar') {
       result = result + specialCharacterWeight;
-    } else if (currentItemType == 'var' && lastItemType == 'var') {
+    } else if (currentItemType == 'int' && lastItemType == 'int') {
       var itemSpace = getNumberSpace(currentItem, lastItem);
       if (itemSpace > securityWeight) {
         result = result + arabicCharacterWeight;
