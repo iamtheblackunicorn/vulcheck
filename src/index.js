@@ -16,6 +16,7 @@ import {
     isInt,
     passwordStrength,
     isSecure,
+    generatePassword,
     testAll
 } from './vulcheck.js';
 
@@ -30,5 +31,6 @@ export default  {
     isInt,
     passwordStrength,
     isSecure,
+    generatePassword,
     testAll
 };
