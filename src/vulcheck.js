@@ -1,5 +1,6 @@
 /*
-Security Check by Alexander Abraham, The Black Unicorn.
+VULCHECK.JS by Alexander Abraham, 
+a.k.a. "The Black Unicorn", a.k.a. "Angeldust Duke".
 Licensed under the MIT license.
 */
 
@@ -21,11 +22,11 @@ export const arabicCharacterWeight = 2;
 // given character as an vareger.
 export function getCharPositon(character) {
     var result = 0;
-    var labvar = character.toLowerCase();
-    var alphabet = 'abcdefghijklmnopqrstuvw';
+    let labvar = character.toLowerCase();
+    let alphabet = 'abcdefghijklmnopqrstuvw';
     var alphabetList = alphabet.split('');
     for (var i = 0; i < alphabetList.length; i++) {
-      if (alphabetList[i] == labvar) {
+      if (alphabetList[i] === labvar) {
         result = i + 1;
         break;
       } else {
@@ -40,7 +41,7 @@ export function getCharPositon(character) {
 export function getCharSpace(characterOne, characterTwo) {
     var charOnePos = getCharPositon(characterOne);
     var charTwoPos = getCharPositon(characterTwo);
-    var space = charTwoPos - charOnePos;
+    let space = charTwoPos - charOnePos;
     return space;
 }
   
@@ -57,11 +58,11 @@ export function stringType(character) {
     var result = 'normChar';
     var labvar = character.toLowerCase();
     var alphabet = 'abcdefghijklmnopqrstuvw';
-    var alphabetList = alphabet.split('');
-    if (alphabetList.includes(labvar) == true) {
+    let alphabetList = alphabet.split('');
+    if (alphabetList.includes(labvar) === true) {
       // Do nothing.
     } else {
-      if (isInt(character) == true){
+      if (isInt(character) === true){
         result = 'int';
       }
       else {
@@ -75,7 +76,7 @@ export function stringType(character) {
 // is an integer.
 export function isInt(expr){
     var result = false;
-    if (isNaN(expr) == true) {
+    if (isNaN(expr) === true) {
         // Do nothing.
     }
     else {
@@ -89,7 +90,7 @@ export function isInt(expr){
 // one to ten as an vareger.
 export function passwordStrength(password) {
   var result = 0;
-  var charList = password.split('');
+  let charList = password.split('');
   for (var i = 1; i < charList.length; i++) {
     var currentItem = charList[i];
     var currentItemType = stringType(currentItem);
@@ -99,9 +100,8 @@ export function passwordStrength(password) {
       var itemSpace = getCharSpace(currentItem, lastItem);
       if (itemSpace > securityWeight) {
         result = result + arabicCharacterWeight;
-      } else {
-        // Do nothing.
-      }
+      } 
+      else {}
     } else if (currentItemType == 'specialChar' &&
         lastItemType == 'specialChar') {
       result = result + specialCharacterWeight;
@@ -109,9 +109,8 @@ export function passwordStrength(password) {
       var itemSpace = getNumberSpace(currentItem, lastItem);
       if (itemSpace > securityWeight) {
         result = result + arabicCharacterWeight;
-      } else {
-        // Do nothing.
       }
+      else {}
     }
   }
   return result;

@@ -113,6 +113,11 @@ $ node .
 - Fixed some ciritical issues.
 - Updated documentation.
 
+### Version 1.5.0
+
+- Minor fixes.
+- Speed improvements.
+
 ## NOTE :scroll:
 
 - *Vulcheck :lock: :ribbon:* by Alexander Abraham :black_heart: a.k.a. *"The Black Unicorn" :unicorn:*

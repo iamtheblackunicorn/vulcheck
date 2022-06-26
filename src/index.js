@@ -1,5 +1,6 @@
 /*
-Security Check by Alexander Abraham, The Black Unicorn.
+VULCHECK.JS by Alexander Abraham, 
+a.k.a. "The Black Unicorn", a.k.a. "Angeldust Duke".
 Licensed under the MIT license.
 */
 
